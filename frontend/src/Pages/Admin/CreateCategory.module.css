@@ -1,0 +1,88 @@
+.heading {
+  font-size: 2.5rem !important;
+  color: #343a40 !important;
+  font-weight: 500 !important;
+  margin-top: 1rem !important;
+}
+
+/* Container for center alignment and spacing */
+.tableContainer {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 50px;
+}
+
+/* Table styling */
+.categoryTable {
+  width: 50vw;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  background-color: transparent;
+}
+
+/* Header row */
+.tableHeader th {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table rows */
+.tableRow {
+  background: linear-gradient(145deg, #f1f1f1, #ffffff);
+  box-shadow: 3px 3px 6px #ccc, -3px -3px 6px #fff;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.tableRow:hover {
+  transform: scale(1.01);
+}
+
+/* Category name column */
+.categoryName {
+  padding: 14px 20px;
+  font-weight: 500;
+}
+
+/* Actions column */
+.actions {
+  display: flex;
+  gap: 10px;
+  padding: 14px 20px;
+}
+
+/* Edit button */
+.editBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.editBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Delete button */
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+}

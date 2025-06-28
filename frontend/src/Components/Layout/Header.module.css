@@ -1,0 +1,261 @@
+html {
+  font-size: 16px;
+}
+body {
+  padding-top: 70px;
+}
+
+ul li {
+  font-size: 0.9rem;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #fff !important;
+  position: fixed !important;
+  top: 0;
+  z-index: 1;
+}
+/* Navbar Styling */
+.navbar {
+  padding: 1rem 3rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.menu {
+  width: auto;
+  font-size: 10px;
+  margin-left: -10px;
+}
+
+/* Nav Links */
+.navLink {
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLink:hover {
+  color: #e40808 !important;
+}
+
+.activeLink {
+  color: #6c63ff !important; /* violet when active */
+}
+
+/* Search Input */
+.searchInput {
+  border-radius: 25px !important;
+  padding-left: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  border: 1px solid #6c63ff !important;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+/* Logout Button */
+.logoutBtn {
+  /* background-color: #ff4d4f !important; */
+  color: black !important;
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease !important;
+
+  &:hover {
+    background-color: #d9363e !important;
+    color: #fff !important;
+  }
+}
+
+/* From Uiverse.io by yaasiinaxmed */
+.logInBtn {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 4.5em;
+  height: 2.3em;
+  line-height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.logInBtn::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.logInBtn:hover {
+  color: white;
+}
+
+.logInBtn:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.logInBtn:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.regBtn {
+  --color: #28a745;
+  font-family: inherit;
+  display: inline-block;
+  width: 4.5em;
+  height: 2.3em;
+  line-height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.regBtn::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.regBtn:hover {
+  color: white;
+}
+
+.regBtn:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.regBtn:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.user {
+  --color: #06c8d9;
+  font-family: inherit;
+  display: inline-block;
+  width: 5em;
+  height: 2.5em;
+  line-height: 2.2em;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.user::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+/* Keep button white when hovered */
+.user:hover,
+.userDropdown.show .user {
+  color: white !important;
+}
+
+/* Animate background on hover or open */
+.user:hover::before,
+.userDropdown.show .user::before {
+  top: -30px;
+  left: -30px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* From Uiverse.io by barisdogansutcu */
+.cartBtn {
+  padding: 15px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.cartBtn:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.cartBtn:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.badge {
+  margin-top: 5px;
+}
+
+@media (max-width: 350px) {
+  .logo {
+    width: 90px;
+    height: 20px;
+  }
+  .toggle {
+    font-size: 10px;
+  }
+}

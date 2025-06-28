@@ -1,0 +1,47 @@
+/* Form Container */
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Input Field */
+.form .form-control {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 1rem;
+}
+
+.form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form .form-control::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Submit Button */
+.form button {
+  width: 100%;
+  background-color: #28a745;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .form {
+    padding: 20px;
+    width: 90%;
+  }
+}
