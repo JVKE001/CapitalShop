@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Checkbox, Radio } from "antd";
 import { Prices } from "../Components/Prices";
@@ -9,7 +9,7 @@ import Layout from "../Components/Layout/Layout";
 import styles from "./Home.module.css";
 
 const Home = () => {
-  const navigate = useNavigate();
+  // State Setup
   const [cart, setCart] = useCart();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -18,25 +18,27 @@ const Home = () => {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  //Get All Category
-  const getAllCategory = async () => {
+  // Fetch all product categories from the backend
+  const fetchAllCategories = async () => {
     try {
       const { data } = await axios.get("/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
   useEffect(() => {
-    getAllCategory();
+    fetchAllCategories();
     getTotal();
   }, []);
 
-  const getAllProducts = async () => {
+  // Fetch paginated product list from the backend
+  const fetchAllProducts = async () => {
     try {
       setLoading(true);
       const { data } = await axios.get(`/api/v1/product/product-list/${page}`);
@@ -44,10 +46,11 @@ const Home = () => {
       setProducts(data.products);
     } catch (error) {
       setLoading(false);
-      console.log(error);
+      console.error(error);
     }
   };
 
+  // Get total number of products from the backend
   const getTotal = async () => {
     try {
       const { data } = await axios.get("/api/v1/product/product-count");
@@ -58,10 +61,11 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (page === 1) getAllProducts();
+    if (page === 1) fetchAllProducts();
     else loadMore();
   }, [page]);
 
+  // Load more
   const loadMore = async () => {
     try {
       setLoading(true);
@@ -74,6 +78,7 @@ const Home = () => {
     }
   };
 
+  // Handle filter
   const handleFilter = (value, id) => {
     let all = [...checked];
     if (value) {
@@ -85,13 +90,14 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (!checked.length && !radio.length) getAllProducts();
+    if (!checked.length && !radio.length) fetchAllProducts();
   }, [checked.length, radio.length]);
 
   useEffect(() => {
     if (checked.length || radio.length) filterProduct();
   }, [checked, radio]);
 
+  // Filter Product
   const filterProduct = async () => {
     try {
       const { data } = await axios.post("/api/v1/product/product-filters", {

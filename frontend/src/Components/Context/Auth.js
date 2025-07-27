@@ -1,10 +1,4 @@
-import {
-  useState,
-  useEffect,
-  useContext,
-  createContext,
-  children,
-} from "react";
+import { useState, useEffect, useContext, createContext } from "react";
 import axios from "axios";
 
 const AuthContext = createContext();
@@ -27,8 +21,6 @@ const AuthProvider = ({ children }) => {
         token: parseDate.token,
       });
     }
-
-    //Eslint-Disble-New Line
   }, []);
 
   return (

@@ -71,42 +71,6 @@ const Header = () => {
               </li>
               <li className={`nav-item`}>
                 <NavLink
-                  to="/shop"
-                  className={({ isActive }) =>
-                    isActive
-                      ? `nav-link ${styles.activeLink} ${styles.navLink}`
-                      : `nav-link ${styles.navLink}`
-                  }
-                >
-                  Shop
-                </NavLink>
-              </li>
-              <li className={`nav-item`}>
-                <NavLink
-                  to="/features"
-                  className={({ isActive }) =>
-                    isActive
-                      ? `nav-link ${styles.activeLink} ${styles.navLink}`
-                      : `nav-link ${styles.navLink}`
-                  }
-                >
-                  Features
-                </NavLink>
-              </li>
-              <li className={`nav-item`}>
-                <NavLink
-                  to="/blog"
-                  className={({ isActive }) =>
-                    isActive
-                      ? `nav-link ${styles.activeLink} ${styles.navLink}`
-                      : `nav-link ${styles.navLink}`
-                  }
-                >
-                  Blog
-                </NavLink>
-              </li>
-              <li className={`nav-item`}>
-                <NavLink
                   to="/about"
                   className={({ isActive }) =>
                     isActive

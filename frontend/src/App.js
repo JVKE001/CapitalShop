@@ -15,6 +15,7 @@ import Dashboard from "./Pages/User/Dashboard";
 import CreateProduct from "./Pages/Admin/CreateProduct";
 import Products from "./Pages/Admin/Product";
 import UpdateProduct from "./Pages/Admin/UpdateProduct";
+import ProductDetails from "./Pages/ProductDetails";
 import Profile from "./Pages/User/Profile";
 import Orders from "./Pages/User/Orders";
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
+        <Route path="/product/:slug" element={<ProductDetails />} />
 
         <Route path="/dashboard" element={<PrivateRoute />}>
           <Route path="user/profile" element={<Dashboard />} />
