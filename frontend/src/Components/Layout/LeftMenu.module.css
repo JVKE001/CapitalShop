@@ -4,7 +4,7 @@
   border-right: 1px solid #ddd;
   overflow-y: auto;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
-  z-index: 100;
+  z-index: 0;
   height: 90vh;
   position: sticky;
   top: 70px !important;
@@ -17,53 +17,3 @@
 .activeLink {
   background-color: #e5e7eb;
 }
-
-/* .usermenu {
-  position: sticky;
-  top: 70px !important;
-  margin-top: -15px;
-  margin-left: -16px !important;
-  height: 90vh;
-  border-right: 1px solid #ddd;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  transition: all 0.3s ease-in-out;
-  overflow-y: auto;
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
-}
-
-.nav-link {
-  font-weight: 500;
-  font-size: 0.75rem;
-  color: black !important;
-}
-
-.usermenu ul li:hover {
-  background-color: #eaf3fd;
-  color: #3385f0 !important;
-}
-
-.activeLink {
-  color: #6c63ff !important;
-  background-color: #eaf3fd !important;
-}
-
-.adminMenu {
-  z-index: 1050 !important;
-}
-
-.navbarNav {
-  background-color: #3498db;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow-y: auto;
-}
-
-.navbarNav li {
-  width: 100%;
-} */

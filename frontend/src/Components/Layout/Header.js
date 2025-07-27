@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className={`navbar navbar-expand-lg shadow-sm px-3 py-2 `}>
+      <nav className={`navbar navbar-expand-lg shadow-sm px-3 py-2`}>
         <div className={`container-fluid`}>
           <button
             className={`btn btn-outline-secondary d-md-none d-flex align-items-center ${styles.menu}`}
@@ -54,7 +54,11 @@ const Header = () => {
           </button>
 
           {/* Navbar Content */}
-          <div className={`collapse navbar-collapse`} id="navbarContent">
+          <div
+            className="collapse navbar-collapse bg-white"
+            style={{ zIndex: 1, width: "100vw" }}
+            id="navbarContent"
+          >
             {/* Nav Links */}
             <ul className={`navbar-nav mx-auto mb-2 mb-lg-0`}>
               <li className={`nav-item`}>
