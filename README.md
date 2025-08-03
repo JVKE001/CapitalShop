@@ -56,7 +56,26 @@ cd CapitalShop
 
 ```
 cd frontend
+
 cd npm install
+
+```
+
+### 4. Start Backend
+
+```
+cd Server
+
+nodemon app
+
+```
+
+### 5. Start Frontend
+
+```
+cd frontend
+
+npm start
 
 ```
 
