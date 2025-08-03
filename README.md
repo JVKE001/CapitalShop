@@ -47,8 +47,16 @@ git clone https://github.com/JVKE001/CapitalShop.git
 ```
 
 ### 2. Navigate to the Project Directory
+
 ```
 cd CapitalShop
+
+```
+### 3. Install Frontend Dependencies
+
+```
+cd frontend
+cd npm install
 
 ```
 
