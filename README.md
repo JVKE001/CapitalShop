@@ -44,5 +44,11 @@ CapitalShop is a full-featured e-commerce web application built with the MERN (M
 ```bash
 git clone https://github.com/JVKE001/CapitalShop.git
 
-2. Navigate to the Project Directory
+```
+
+### 2. Navigate to the Project Directory
+```
+cd CapitalShop
+
+```
 
