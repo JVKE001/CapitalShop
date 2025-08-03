@@ -79,3 +79,9 @@ npm start
 
 ```
 
+<hr/>
+
+### Author
+
+JVKE
+
